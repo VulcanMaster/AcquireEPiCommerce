@@ -1,0 +1,31 @@
+﻿@model AcquireEPiCommerce.Web.Models.Pages.StandardPage
+
+@{ 
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <h3 style="margin-bottom:100px; margin-top:50px;">
+        @Html.PropertyFor(p => p.Heading)
+    </h3>
+</div>
+<div style='height:100px;'>
+    @Html.PropertyFor(p => p.MainBody)
+</div>
+<div>
+    @Html.PropertyFor(p => p.ContentArea)
+</div>
+
+
+@*<div>
+    @Html.ActionLink("Back to Home", "Index")
+</div>*@
+
+@*<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>*@
