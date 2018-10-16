@@ -1,6 +1,7 @@
-﻿@model AcquireEPiCommerce.Web.Models.Pages.StandardPage
+﻿@using AcquireEPiCommerce.Web.Helpers
+@model AcquireEPiCommerce.Web.Models.Pages.StandardPage
 
-@{ 
+@{
 
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -18,14 +19,14 @@
     @Html.PropertyFor(p => p.MainBody)
 </div>
 <div>
-    @Html.PropertyFor(p => p.ContentArea)
+    @*@Html.PropertyFor(p => p.ContentArea)*@
 </div>
 
 
 @*<div>
-    @Html.ActionLink("Back to Home", "Index")
-</div>*@
+        @Html.ActionLink("Back to Home", "Index")
+    </div>*@
 
 @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>
-<script src="~/Scripts/jquery.validate.min.js"></script>
-<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>*@
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>*@
